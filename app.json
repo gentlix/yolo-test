@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "Expo AI",
+    "slug": "expo-ai",
+    "owner": "bacon",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icons/bouquet.png",
+    "scheme": "expoai",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#000",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icons/bouquet.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "ios": {
+      "appleTeamId": "QQ57RJ5UTD",
+      "bundleIdentifier": "app.bacon.expoai",
+      "icon": {
+        "light": "./assets/icons/bouquet.png",
+        "dark": "./assets/icons/floral.png"
+      },
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "com.apple.security.application-groups": ["group.app.bacon.expoai"]
+      },
+      "associatedDomains": [
+        "applinks:exai.expo.app",
+        "webcredentials:exai.expo.app",
+        "activitycontinuation:exai.expo.app"
+      ]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "@bacons/apple-colors",
+      ["expo-router", {}],
+      "expo-font",
+      [
+        "expo-quick-actions/icon/plugin",
+        [
+          "./assets/icons/scifi.png",
+          "./assets/icons/awe.png",
+          "./assets/icons/water.png",
+          "./assets/icons/coffee.png",
+          "./assets/icons/sunrise.png"
+        ]
+      ],
+      "expo-quick-actions",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icons/bouquet.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactServerFunctions": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "95d2c7db-33a6-4055-8297-0198c13734ca"
+      }
+    }
+  }
+}

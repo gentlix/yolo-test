@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 14.2.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "simulator": {
+      "environment": "production",
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Release"
+      },
+      "resourceClass": "large"
+    },
+    "production": {
+      "environment": "production",
+      "autoIncrement": true,
+      "resourceClass": "large"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
